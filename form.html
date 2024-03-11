@@ -1,0 +1,430 @@
+<!-- <!doctype html>
+<html>
+    <body>
+        <h2>this is a text input box
+        </h2>
+        <form>
+            first name<br>
+            <input type="text" name="firstname">
+        <br>
+            last name<br>
+            <input type="text" name="last name">
+        </form>
+    </body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User Information Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(50, 189, 78, 0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>User Information Form</h2>
+  <form action="submit.php" method="POST">
+    <fieldset>
+        <legend>personal information :
+
+        </legend>
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName">
+    </div>
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+</fieldset>
+    <div>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" cols="50"></textarea>
+    </div>
+    <div>
+      <label for="birthdate">Date of Birth:</label>
+      <input type="date" id="birthdate" name="birthdate">
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html> -->
+
+<html>
+    <style>
+        h1
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 58px;
+            font-display: fallback;
+            text-align: center;
+        }
+        
+    </style>
+    <head>
+        <title>form page</title>
+        <link rel="stylesheet" href="formstyler.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center" style="color: rgb(241, 241, 241)">
+                    Feedback Form
+                </h1>
+                <p id="description" style="color: beige"></p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <h3>Personal Details :</h3>
+                    <label id="name-label" for="name">Name: </label>
+                    <input
+                        type="text"
+                        name="name"
+                     
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email: </label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your Email"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="number-label"
+                        >Age<span class="clue">(optional): </span></label
+                    >
+                    <input
+                        type="number"
+                        name="age"
+                        id="number"
+                        class="form-control"
+                        placeholder="Age"
+                    />
+                </div>
+                <div class="form-group">
+                    <h3>Which option best describes your current role?</h3>
+                    <select
+                        id="dropdown"
+                        name="role"
+                        class="form-control"
+                        required
+                    >
+                        <option disabled selected value>
+                            Select current role
+                        </option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+               
+
+               
+                    <div class="form-group">
+                        <h3>What is your favorite feature of ITM?</h3>
+                        <select
+                            id="most-like"
+                            name="mostLike"
+                            class="form-control"
+                            required
+                            multiple
+                        >
+                            <option disabled selected value>
+                                Select an option
+                            </option>
+                            <option value="challenges">Challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="community">Community</option>
+                            <option value="openSource">Open Source</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <h3>
+                            What are your interests?<span class="clue"
+                                >(Check all that apply)</span
+                            >
+                        </h3>
+    
+                        <label>
+                            <input
+                                name="prefer"
+                                value="front-end-projects"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            Front-end Projects</label
+                        >
+                        <label>
+                            <input
+                                name="prefer"
+                                value="back-end-projects"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            Back-end Projects</label
+                        >
+                        <label>
+                            <input
+                                name="prefer"
+                                value="data-visualization"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            Data Visualization</label
+                        >
+                        <label>
+                            <input
+                                name="prefer"
+                                value="challenges"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            Challenges</label
+                        >
+                        <label>
+                            <input
+                                name="prefer"
+                                value="open-source-community"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            Open Source Community</label
+                        >
+                        <label>
+                            <input
+                                name="prefer"
+                                value="gitter-help-rooms"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            Gitter help rooms</label
+                        >
+                        <label>
+                            <input
+                                name="prefer"
+                                value="videos"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            Videos</label
+                        >
+                        <label>
+                            <input
+                                name="prefer"
+                                value="city-meetups"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            City Meetups</label
+                        >
+                        <label>
+                            <input
+                                name="prefer"
+                                value="wiki"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            Wiki</label
+                        >
+                        <label>
+                            <input
+                                name="prefer"
+                                value="forum"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            Forum</label
+                        >
+                        <label>
+                            <input
+                                name="prefer"
+                                value="additional-courses"
+                                type="checkbox"
+                                class="input-checkbox"
+                            />
+                            Additional Courses</label
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <h3 id="title" class="text-center" style="color: rgb(0, 0, 0)">
+                            <u>Any Comments or Suggestions?</u>
+                        </h3>
+                        <textarea
+                            id="comments"
+                            class="input-textarea"
+                            name="comment"
+                            placeholder="Enter your comment here..."
+                            style="resize: none"
+                        ></textarea>
+                    </div>
+                 
+                </div>
+
+
+
+               
+             
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <div class="form-group">
+                    <h3>Would you recommend ITM to a friend?</h3>
+                    <label>
+                        <input
+                            name="user-recommend"
+                            value="definitely"
+                            type="radio"
+                            class="input-radio"
+                        />
+                        Definitely</label
+                    >
+                    <label>
+                        <input
+                            name="user-recommend"
+                            value="maybe"
+                            type="radio"
+                            class="input-radio"
+                            checked
+                        />
+                        Maybe</label
+                    >
+
+                    <label
+                        ><input
+                            name="user-recommend"
+                            value="not-sure"
+                            type="radio"
+                            class="input-radio"
+                        />
+                        Not sure</label
+                    >
+                </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
